@@ -19,7 +19,7 @@ public class OrderRepository {
         this.orderHashMap = new HashMap<>();
         this.deliveryPartnerHashMap = new HashMap<>();
         this.orderPartnerHashMap = new HashMap<>();
-        this.orderPartnerHashMap = new HashMap<>();
+        this.partnerOrderHashMap = new HashMap<>();
     }
 
     public void addOrder(Order order) {
