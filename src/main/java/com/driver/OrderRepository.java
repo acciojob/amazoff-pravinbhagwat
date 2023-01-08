@@ -77,11 +77,11 @@ public class OrderRepository {
     }
 
     public void deletePartner(String partnerId) {
-        HashSet<String> orders = new HashSet<String>();
+        HashSet<String> orders = new HashSet<>();
         if(partnerOrderHashMap.containsKey(partnerId)){
             orders = partnerOrderHashMap.get(partnerId);
             for(String order: orders){
-                if(partnerOrderHashMap.containsKey(order)){
+                if(orderPartnerHashMap.containsKey(order)){
 
                     orderPartnerHashMap.remove(order);
                 }
