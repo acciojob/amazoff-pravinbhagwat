@@ -35,7 +35,7 @@ public class OrderService {
     }
 
     public Integer getOrderCountByPartnerId(String partnerId) {
-        return getOrderCountByPartnerId(partnerId);
+        return orderRepository.getOrderCountByPartnerId(partnerId);
     }
 
     public List<String> getOrdersByPartnerId(String partnerId) {

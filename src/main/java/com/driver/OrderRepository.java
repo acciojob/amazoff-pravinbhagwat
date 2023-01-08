@@ -159,4 +159,11 @@ public class OrderRepository {
         return new ArrayList<>(orderList);
     }
 
+    public Integer getOrderCountByPartnerId(String partnerId) {
+        Integer orderCount = 0;
+        if(deliveryPartnerHashMap.containsKey(partnerId)){
+            orderCount = deliveryPartnerHashMap.get(partnerId).getNumberOfOrders();
+        }
+        return orderCount;
+    }
 }
